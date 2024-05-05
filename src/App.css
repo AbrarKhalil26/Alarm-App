@@ -1,0 +1,110 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #888;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/* --------------------------------------------- */
+/*                  Global Icon Style            */
+/* --------------------------------------------- */
+.p-icon {
+  @apply flex justify-center items-center p-2 rounded-full cursor-pointer;
+}
+
+.p-icon:hover {
+  background-color: #9ca3af1f;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon {
+  @apply text-xl;
+}
+
+/* --------------------------------------------- */
+/*                  Global Btn Style             */
+/* --------------------------------------------- */
+.outlined-btn {
+  border: 1px solid #1f2937;
+  background-color: white;
+  color: #16a34a;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.outlined-btn:hover {
+  background-color: #15803d;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.contained-btn {
+  @apply text-white bg-green-600 px-4 py-2 rounded-md font-semibold cursor-pointer transition ease-in-out duration-200;
+}
+
+.contained-btn:hover {
+  background-color: #15803d;
+  transition: all 0.2s ease-in-out;
+}
+
+/* --------------------------------------------- */
+/*             Global Tooltips Style             */
+/* --------------------------------------------- */
+.active-tooltip {
+  display: block;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f9f9f9;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  padding: 5px 10px;
+  z-index: 111;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  text-align: left;
+  width: fit-content;
+  width: -moz-fit-content;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  pointer-events: auto;
+}
+
+
+/* --------------------------------------------- */
+
+.shadow-right-dark{
+  box-shadow: 7px 7px 6px -1px rgba(63, 63, 70, 0.2);
+}
+.top-19{
+  top: 4.75rem;
+}
+.shadow-inset{
+  box-shadow: inset 5px 5px 10px 0px rgba(63, 63, 70, 0.2);
+}
